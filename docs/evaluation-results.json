@@ -1,0 +1,173 @@
+{
+  "dataset": "13 synthetic scenarios; hand-authored expected routes, not real user data",
+  "scenario_count": 13,
+  "exact_matches": 10,
+  "micro_precision": 0.9091,
+  "micro_recall": 0.8333,
+  "unnecessary_consultations": 1,
+  "missed_dependencies": 2,
+  "true_positives": 10,
+  "results": [
+    {
+      "id": "production-replacement",
+      "kind": "supported",
+      "expected": [
+        "finance",
+        "infrastructure",
+        "operations",
+        "security",
+        "support"
+      ],
+      "actual": [
+        "finance",
+        "infrastructure",
+        "operations",
+        "security",
+        "support"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "security-only",
+      "kind": "supported",
+      "expected": [
+        "security"
+      ],
+      "actual": [
+        "security"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "finance-only",
+      "kind": "supported",
+      "expected": [
+        "finance"
+      ],
+      "actual": [
+        "finance"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "infrastructure-only",
+      "kind": "supported",
+      "expected": [
+        "infrastructure"
+      ],
+      "actual": [
+        "infrastructure"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "support-only",
+      "kind": "supported",
+      "expected": [
+        "support"
+      ],
+      "actual": [
+        "support"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "operations-only",
+      "kind": "supported",
+      "expected": [
+        "operations"
+      ],
+      "actual": [
+        "operations"
+      ],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "no-routing",
+      "kind": "negative",
+      "expected": [],
+      "actual": [],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "ambiguous",
+      "kind": "ambiguous",
+      "expected": [],
+      "actual": [],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "financial-synonyms",
+      "kind": "challenge",
+      "expected": [
+        "finance"
+      ],
+      "actual": [],
+      "exact_match": false,
+      "missed": [
+        "finance"
+      ],
+      "unnecessary": []
+    },
+    {
+      "id": "security-synonyms",
+      "kind": "challenge",
+      "expected": [
+        "security"
+      ],
+      "actual": [],
+      "exact_match": false,
+      "missed": [
+        "security"
+      ],
+      "unnecessary": []
+    },
+    {
+      "id": "negated-budget",
+      "kind": "challenge",
+      "expected": [],
+      "actual": [],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    },
+    {
+      "id": "department-mention-only",
+      "kind": "challenge",
+      "expected": [],
+      "actual": [
+        "security"
+      ],
+      "exact_match": false,
+      "missed": [],
+      "unnecessary": [
+        "security"
+      ]
+    },
+    {
+      "id": "untrusted-instruction",
+      "kind": "adversarial",
+      "expected": [],
+      "actual": [],
+      "exact_match": true,
+      "missed": [],
+      "unnecessary": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "executed_at": "2026-11-13T07:47:33.573191+00:00",
+  "command": "python scripts/demo.py --base-url http://127.0.0.1:8000",
+  "exit_code": 0,
+  "discussion_id": "6cc96ad4-45f8-48d2-a72a-46e7051d94ed",
+  "analysis_mode": "deterministic-baseline",
+  "observed": {
+    "initial_status": "review_required",
+    "consultations": 4,
+    "approval_replay_duplicates": 0,
+    "responses": 4,
+    "response_replay_duplicates": 0,
+    "recipient_projection_checks": "passed",
+    "risks": 1,
+    "actions": 4,
+    "outstanding": 0,
+    "readiness_disagreement": true,
+    "final_status": "blocked",
+    "formal_decisions": 0
+  },
+  "limits": [
+    "Synthetic identities and scenario",
+    "No live LLM or semantic accuracy claim",
+    "No real-world business impact measurement"
+  ]
+}
